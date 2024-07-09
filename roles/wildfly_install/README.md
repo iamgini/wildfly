@@ -28,6 +28,7 @@ Role Defaults
 |`wildfly_group`| posix group for wildfly | `{{ wildfly_user }}` |
 |`wildfly_java_package_name`| RHEL java rpm package | `java-11-openjdk-headless` |
 |`wildfly_offline_install`| Whether to install from local archive | `False` |
+|`wildfly_archive_filename_local`| Path to local archive file | NA |
 
 
 Role Variables
