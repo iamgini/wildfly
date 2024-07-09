@@ -18,7 +18,7 @@
 - name: Set download paths
   ansible.builtin.set_fact:
     full_path_to_archive: "{{ wildfly_install.archive_dir }}/{{ wildfly_install.archive_name }}"
-    local_path_to_archive: "{{ local_path.stat.path }}/{{ wildfly_install.archive_name }}"
+    local_path_to_archive: "{{ wildfly_archive_filename_local }}"
 
 - name: "Check target archive: {{ full_path_to_archive }}"
   ansible.builtin.stat:
